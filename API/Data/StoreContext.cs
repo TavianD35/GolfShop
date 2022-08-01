@@ -1,4 +1,6 @@
+using System;
 using API.Entities;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Data
@@ -11,5 +13,10 @@ namespace API.Data
         }
 
         public DbSet<Product> Products { get; set; }
+
+        public static implicit operator ControllerContext(StoreContext v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
