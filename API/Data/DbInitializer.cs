@@ -17,7 +17,7 @@ namespace API.Data
                     Name = "Golf Stencil",
                     Description = "Calculator themed golf ball stencil.",
                     Price = 15000,
-                    PictureURL = "/images/products/sb-ang2.png",
+                    PictureURL = "/images/products/CalculatorBlack.PNG",
                     Brand = "Angular",
                     Type = "Boards",
                     QuantityInStock = 100
