@@ -1,6 +1,7 @@
 import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Product } from "../../app/models/products";
+import image from "../../images/backgroundTurf.jpg";
 
 interface Props {
     product: Product;
@@ -8,7 +9,7 @@ interface Props {
 
 export default function ProductCard({ product }: Props) {
     return (
-        <Box sx={{ boxShadow: 15}}>
+        <Box sx={{ boxShadow: 15 }}>
             <Card sx={{ bgcolor: '#9e9e9e' }}>
                 <CardHeader
                     avatar={
