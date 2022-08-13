@@ -1,12 +1,11 @@
 .dropdownMain {
-    background-color: 'red';
     margin-left:24px;
     margin-right: 24px;
     position:relative;
 }
 
 .dropdownBtn {
-    background-color: 'green';
+    
 }
 
 .dropdownMain:hover .dropdownContentContainer {
