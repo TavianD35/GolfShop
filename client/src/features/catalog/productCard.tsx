@@ -1,4 +1,4 @@
-import { Avatar, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
+import { Avatar, Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { Product } from "../../app/models/products";
 
@@ -8,35 +8,32 @@ interface Props {
 
 export default function ProductCard({ product }: Props) {
     return (
-        <Card sx={{bgcolor: '#bdbdbd'}}>
-            <CardHeader
-                avatar={
-                    <Avatar sx={{bgcolor: 'secondary.main'}}>
-                        {product.name.charAt(0).toUpperCase()}
-                    </Avatar>
-                }
-                title={product.name}
-                titleTypographyProps={{
-                    sx: {fontWeight: 'bold', color: 'primary.main'}
-                }}
-            />
-            <CardMedia
-                sx={{ height: 140, backgroundSize: 'contain', bgcolor: 'white' }}
-                image={product.pictureURL}
-                title={product.name}
-            />
-            <CardContent>
-                <Typography gutterBottom color='secondary' variant="h5">
-                    ${(product.price / 100).toFixed(2)}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                    {product.brand} / {product.type}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Add To Cart</Button>
-                <Button component={Link} to={`/catalog/${product.id}`} size="small">View</Button>
-            </CardActions>
-        </Card>
+        <Box sx={{ boxShadow: 15}}>
+            <Card sx={{ bgcolor: '#9e9e9e' }}>
+                <CardHeader
+                    avatar={
+                        <Avatar src={product.pictureUrlBlack} />
+                    }
+                    title={product.name}
+                    titleTypographyProps={{
+                        sx: { fontWeight: 'bold', color: 'primary.dark' }
+                    }}
+                />
+                <CardMedia
+                    sx={{ height: 140, backgroundSize: 'contain', bgcolor: '#388e3c'}}
+                    image={product.pictureUrlBlack}
+                    title={product.name}
+                />
+                <CardContent>
+                    <Typography gutterBottom color='black' variant="h5">
+                        ${(product.price / 100).toFixed(2)}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button sx={{ color: 'primary.dark' }} size="small">Add To Cart</Button>
+                    <Button sx={{ color: 'primary.dark' }} component={Link} to={`/catalog/${product.id}`} size="small">View</Button>
+                </CardActions>
+            </Card>
+        </Box>
     )
 }

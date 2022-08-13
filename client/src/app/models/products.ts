@@ -3,8 +3,11 @@ export interface Product {
         description: string;
         name: string;
         price: number;
-        pictureURL: string;
-        type?: string;
-        brand: string;
-        quantityInStock?: number;
+        pictureUrlBlack: string;
+        pictureUrlBlue: string;
+        pictureUrlOrange: string;
+        pictureUrlRed: string;
+        pictureUrlWhite: string;
+        plasticType: string;
+        productType: string;
 }

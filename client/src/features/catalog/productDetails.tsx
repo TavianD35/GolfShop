@@ -1,34 +1,36 @@
 import { Divider, Grid, Table, TableBody, TableCell, TableContainer, TableRow, Typography } from "@mui/material";
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import agent from "../../app/api/agent";
+import NotFound from "../../app/errors/notFound";
+import LoadingComponent from "../../app/layout/loadingComponent";
 import { Product } from "../../app/models/products";
 
 export default function ProductDetails() {
-    const {id} = useParams<{id: string}>();
-    const [product, setProduct] =useState<Product | null>(null);
+    const { id } = useParams<{ id: string }>();
+    const [product, setProduct] = useState<Product | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/products/${id}`)
-        .then(response => setProduct(response.data))
-        .catch(error => console.log(error))
-        .finally(() => setLoading(false));
+        agent.Catalog.details(Number(id))
+            .then(response => setProduct(response))
+            .catch(error => console.log(error))
+            .finally(() => setLoading(false));
     }, [id])
 
-    if (loading) return <h3>Loading...</h3>
+    if (loading) return <LoadingComponent message='loading product...' />
 
-    if (!product) return <h3>Product not found</h3>
+    if (!product) return <NotFound />
 
     return (
         <Grid container spacing={6}>
             <Grid item xs={6}>
-                <img src={product.pictureURL} alt={product.name} style={{width: '100%'}} />
+                <img src={product.pictureUrlBlack} alt={product.name} style={{ width: '100%' }} />
             </Grid>
             <Grid item xs={6}>
                 <Typography variant='h3'>{product.name}</Typography>
-                <Divider sx={{mb: 2}} />
-                <Typography variant='h4' color='secondary'>{(product.price / 100).toFixed(2)}</Typography>
+                <Divider sx={{ mb: 2 }} />
+                <Typography variant='h4' color='#f44336'>${(product.price / 100).toFixed(2)}</Typography>
                 <TableContainer>
                     <Table>
                         <TableBody>
@@ -41,16 +43,12 @@ export default function ProductDetails() {
                                 <TableCell>{product.description}</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>Type</TableCell>
-                                <TableCell>{product.type}</TableCell>
+                                <TableCell>Plastic Type</TableCell>
+                                <TableCell>{product.plasticType}</TableCell>
                             </TableRow>
                             <TableRow>
-                                <TableCell>Brand</TableCell>
-                                <TableCell>{product.brand}</TableCell>
-                            </TableRow>
-                            <TableRow>
-                                <TableCell>Quantity in Stock</TableCell>
-                                <TableCell>{product.quantityInStock}</TableCell>
+                                <TableCell>Product Type</TableCell>
+                                <TableCell>{product.productType}</TableCell>
                             </TableRow>
                         </TableBody>
                     </Table>

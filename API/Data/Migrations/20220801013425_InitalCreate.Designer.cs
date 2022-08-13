@@ -24,25 +24,34 @@ namespace API.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Brand")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Description")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PictureURL")
+                    b.Property<string>("PictureUrlBlack")
                         .HasColumnType("TEXT");
+
+                    b.Property<string>("PictureUrlBlue")
+                    .HasColumnType("TEXT");
+
+                    b.Property<string>("PictureUrlOrange")
+                    .HasColumnType("TEXT");
+
+                    b.Property<string>("PictureUrlRed")
+                    .HasColumnType("TEXT");
+
+                    b.Property<string>("PictureUrlWhite")
+                    .HasColumnType("TEXT");
 
                     b.Property<long>("Price")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("QuantityInStock")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("PlasticType")
+                        .HasColumnType("TEXT");
 
-                    b.Property<string>("Type")
+                    b.Property<string>("ProductType")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");

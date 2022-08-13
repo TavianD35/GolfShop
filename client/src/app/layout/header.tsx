@@ -8,7 +8,7 @@ interface Props {
 }
 
 const midLinks = [
-    { title: 'catalog', path: '/catalog' },
+    { title: 'products', path: '/catalog' },
     { title: 'about', path: '/about' },
     { title: 'contact', path: '/contact' },
 ]
@@ -40,28 +40,27 @@ export default function Header({ darkMode, handleThemeChange }: Props) {
                     <Typography variant='h6' component={NavLink}
                         to='/'
                         sx={navStyles}>
-                        Golf Ball Stencils
+                        Golf Customs
                     </Typography>
                     <Switch checked={darkMode} onChange={handleThemeChange} />
                 </Box>
 
-
-                <List sx={{ display: 'flex' }}>
-                    {midLinks.map(({ title, path }) => (
-                        <ListItem
-                            component={NavLink}
-                            to={path}
-                            key={path}
-                            sx={navStyles}
-                        >
-                            {title.toUpperCase()}
-                        </ListItem>
-                    ))}
-                </List>
+                    <List sx={{ display: 'flex' }}>
+                        {midLinks.map(({ title, path }) => (
+                            <ListItem
+                                component={NavLink}
+                                to={path}
+                                key={path}
+                                sx={navStyles}
+                            >
+                                {title.toUpperCase()}
+                            </ListItem>
+                        ))}
+                    </List>
 
                 <Box display='flex' alignItems='center'>
                     <IconButton size='large' sx={{ color: 'inherit' }}>
-                        <Badge badgeContent={4} color='secondary'>
+                        <Badge badgeContent={1} color='error'>
                             <ShoppingCart />
                         </Badge>
                     </IconButton>

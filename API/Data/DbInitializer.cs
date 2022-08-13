@@ -14,13 +14,170 @@ namespace API.Data
             {
                 new Product
                 {
-                    Name = "Golf Stencil",
-                    Description = "Calculator themed golf ball stencil.",
-                    Price = 15000,
-                    PictureURL = "/images/products/CalculatorBlack.PNG",
-                    Brand = "Angular",
-                    Type = "Boards",
-                    QuantityInStock = 100
+                    Name = "Calculator",
+                    Description = "Calculator themed golf ball stencil for the most calculated shots.",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/CalculatorBlack.PNG",
+                    PictureUrlBlue = "/images/products/CalculatorBlue.PNG",
+                    PictureUrlOrange = "/images/products/CalculatorOrange.PNG",
+                    PictureUrlRed = "/images/products/CalculatorRed.PNG",
+                    PictureUrlWhite = "/images/products/CalculatorWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Product",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Golf Ball Stencil"
                 },
             };
 
