@@ -15,6 +15,5 @@ export default function ProductList({ products }: Props) {
                 </Grid>
             ))}
         </Grid>
-
     )
 }

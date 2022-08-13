@@ -19,11 +19,13 @@ export default function ProductCard({ product }: Props) {
                         sx: { fontWeight: 'bold', color: 'primary.dark' }
                     }}
                 />
-                <CardMedia
-                    sx={{ height: 140, backgroundSize: 'contain', bgcolor: '#388e3c'}}
-                    image={product.pictureUrlBlack}
-                    title={product.name}
-                />
+                <div style={{backgroundImage: `url(${product.pictureUrlBlack})`, backgroundSize: `fill` }}>
+                    <CardMedia
+                        sx={{ height: 140, backgroundSize: 'contain'}}
+                        image={product.pictureUrlBlack}
+                        title={product.name}
+                    />
+                </div>
                 <CardContent>
                     <Typography gutterBottom color='black' variant="h5">
                         ${(product.price / 100).toFixed(2)}
