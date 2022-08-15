@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20220801013425_InitalCreate")]
-    partial class InitalCreate
+    [Migration("20220814154304_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -34,22 +34,22 @@ namespace API.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrlBlue")
-                    .HasColumnType("TEXT");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrlOrange")
-                    .HasColumnType("TEXT");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrlRed")
-                    .HasColumnType("TEXT");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PictureUrlWhite")
-                    .HasColumnType("TEXT");
-
-                    b.Property<long>("Price")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PlasticType")
                         .HasColumnType("TEXT");
+
+                    b.Property<long>("Price")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("ProductType")
                         .HasColumnType("TEXT");

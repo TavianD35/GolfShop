@@ -2,6 +2,7 @@ import { ShoppingCart } from "@mui/icons-material";
 import { AppBar, Badge, Box, IconButton, List, ListItem, Switch, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import { useStoreContext } from "../context/StoreContext";
 import styles from './styles.module.css';
 
 interface Props {
@@ -10,9 +11,9 @@ interface Props {
 }
 
 const midLinks = [
-    { title: 'products', path: '/catalog', subMenu: [{title: "Balls", path: "/test1"}, {title: "Clubs", path: '/test2'}, {title: "Tees", path: "/test1"}, {title: "Clothing", path: "/test1"}] },
-    { title: 'about', path: '/about', subMenu: [{title: "About Us", path: "/test1"}, {title: "Who We Are", path: '/test2'}] },
-    { title: 'contact', path: '/contact', subMenu: [{title: "Get a quote", path: "/test1"}, {title: "Contact Support", path: '/test2'}] },
+    { title: 'products', subMenu: [{ title: "all products", path: "/catalog" }, { title: "ball stencils", path: '/ball-stencils' }, { title: "ball markers", path: "ball-markers" }, { title: "divot repair tools", path: "divot-repair-tools" }] },
+    { title: 'about', path: '/about', subMenu: [{ title: "About Us", path: "/about" }] },
+    { title: 'contact', path: '/contact', subMenu: [{ title: "Get a quote", path: "/test1" }, { title: "Contact Support", path: '/test2' }] },
 ]
 
 const rightLinks = [
@@ -29,52 +30,54 @@ const navStyles = {
         color: 'grey.500'
     },
     '&.active': {
-        color: 'black'
+        color: '#66bb6a'
     }
 }
 
 export default function Header({ darkMode, handleThemeChange }: Props) {
+    const {basket} = useStoreContext();
+    const itemCount = basket?.items.reduce((sum, item) => sum + item.quantity, 0)
+
     return (
-        <AppBar position="static" sx={{ mb: 4 }}>
+        <AppBar position="static" style={{background: '#212121'}} sx={{ mb: 4 }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
                 <Box display='flex' alignItems='center'>
                     <Typography variant='h6' component={NavLink}
                         to='/'
                         sx={navStyles}>
-                        Golf Customs
+                        HOME
                     </Typography>
-                    <Switch checked={darkMode} onChange={handleThemeChange} />
                 </Box>
 
-                    <div className={styles.navigationContainer}>
-                        {midLinks.map(({ title, path, subMenu }) => (
-                            <div className={styles.dropdownMain}>
-                                <div className={styles.dropdownBtn}>
-                                    {title.toUpperCase()}
-                                </div>
-                                {subMenu.length > 0 ? (
-                                    <div className={styles.dropdownContentContainer}>
-                                        <div className={styles.dropdownContent}>
-                                            {subMenu.map((subMenuItem) => (
-                                                <Link
-                                                    to={subMenuItem.path}
-                                                    key={subMenuItem.path}
-                                                    className={styles.dropdownLink}
-                                                >
-                                                    {subMenuItem.title.toUpperCase()}
-                                                </Link>
-                                            ))}
-                                        </div>
-                                    </div>  
-                                ) : <></>}
+                <div className={styles.navigationContainer}>
+                    {midLinks.map(({ title, path, subMenu }) => (
+                        <div className={styles.dropdownMain}>
+                            <div className={styles.dropdownBtn}>
+                                {title.toUpperCase()}
                             </div>
-                        ))}
-                    </div>
+                            {subMenu.length > 0 ? (
+                                <div className={styles.dropdownContentContainer}>
+                                    <div className={styles.dropdownContent}>
+                                        {subMenu.map((subMenuItem) => (
+                                            <Link
+                                                to={subMenuItem.path}
+                                                key={subMenuItem.path}
+                                                className={styles.dropdownLink}
+                                            >
+                                                {subMenuItem.title.toUpperCase()}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                </div>
+                            ) : <></>}
+                        </div>
+                    ))}
+                </div>
 
                 <Box display='flex' alignItems='center'>
-                    <IconButton size='large' sx={{ color: 'inherit' }}>
-                        <Badge badgeContent={1} color='error'>
+                    <IconButton component={Link} to='/basket' size='large' sx={{ color: 'inherit' }}>
+                        <Badge badgeContent={itemCount} color='error'>
                             <ShoppingCart />
                         </Badge>
                     </IconButton>

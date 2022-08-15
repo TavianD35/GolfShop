@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import agent from "../app/api/agent";
-import LoadingComponent from "../app/layout/LoadingComponent";
-import { Product } from "../app/models/products";
-import ProductList from "./catalog/ProductList";
+import agent from "../../app/api/agent";
+import LoadingComponent from "../../app/layout/LoadingComponent";
+import { Product } from "../../app/models/products";
+import ProductList from "../catalog/ProductList";
 
 export default function Catalog() {
     const [products, setProducts] = useState<Product[]>([]);
@@ -19,6 +19,7 @@ export default function Catalog() {
 
     return (
         <>
+            Divot Repair Tool Page
             <ProductList products={products} />
         </>
     )

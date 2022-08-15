@@ -2,6 +2,9 @@
     margin-left:24px;
     margin-right: 24px;
     position:relative;
+    font-family: 'roboto';
+    font-weight: bold;
+    font-size: 18.4px;
 }
 
 .dropdownBtn {
@@ -39,11 +42,11 @@
 .dropdownLink {
     display:block;
     padding: 8px 12px;
-    width: 150px;
+    width: 205px;
     text-decoration: none;
-    background-color: #ECECEC;
+    background-color: #bdbdbd;
     transition: background-color 0.4s;
-    color: #333;
+    color: #212121;
 }
 
 .dropdownLink:hover {

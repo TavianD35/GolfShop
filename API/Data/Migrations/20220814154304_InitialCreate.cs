@@ -4,7 +4,7 @@
 
 namespace API.Data.Migrations
 {
-    public partial class InitalCreate : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -23,7 +23,7 @@ namespace API.Data.Migrations
                     PictureUrlRed = table.Column<string>(type: "TEXT", nullable: true),
                     PictureUrlWhite = table.Column<string>(type: "TEXT", nullable: true),
                     PlasticType = table.Column<string>(type: "TEXT", nullable: true),
-                    ProductType = table.Column<string>(type: "TEXT", nullable: true),
+                    ProductType = table.Column<string>(type: "TEXT", nullable: true)
                 },
                 constraints: table =>
                 {

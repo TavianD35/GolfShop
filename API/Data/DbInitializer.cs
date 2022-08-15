@@ -12,6 +12,7 @@ namespace API.Data
 
             var products = new List<Product>
             {
+                /************BALL STENCILS************/
                 new Product
                 {
                     Name = "Calculator",
@@ -28,7 +29,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -42,7 +43,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -56,7 +57,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -70,7 +71,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -84,7 +85,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -98,7 +99,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -112,7 +113,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -126,7 +127,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -140,7 +141,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -154,7 +155,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -168,7 +169,7 @@ namespace API.Data
 
                 new Product
                 {
-                    Name = "Dummy Product",
+                    Name = "Dummy Ball Stencil",
                     Description = "Add witty description here!",
                     Price = 2000,
                     PictureUrlBlack = "/images/products/DummyBlack.PNG",
@@ -179,6 +180,250 @@ namespace API.Data
                     PlasticType = "PLA",
                     ProductType = "Golf Ball Stencil"
                 },
+
+
+                /************BALL MARKERS************/
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Ball Marker",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Ball Marker"
+                },
+
+
+                /************DIVOT REPAIR TOOLS************/
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+                new Product
+                {
+                    Name = "Dummy Divot Repair Tool",
+                    Description = "Add witty description here!",
+                    Price = 2000,
+                    PictureUrlBlack = "/images/products/DummyBlack.PNG",
+                    //PictureUrlBlue = "/images/products/DummyBlue.PNG",
+                    //PictureUrlOrange = "/images/products/DummyOrange.PNG",
+                    //PictureUrlRed = "/images/products/DummyRed.PNG",
+                    //PictureUrlWhite = "/images/products/DummyWhite.PNG",
+                    PlasticType = "PLA",
+                    ProductType = "Divot Repair Tool"
+                },
+
+
             };
 
             foreach(var product in products)
