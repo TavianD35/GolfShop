@@ -2,13 +2,8 @@ import { ShoppingCart } from "@mui/icons-material";
 import { AppBar, Badge, Box, IconButton, List, ListItem, Switch, Toolbar, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import { useStoreContext } from "../context/StoreContext";
+import { useAppSelector } from "../store/configureStore";
 import styles from './styles.module.css';
-
-interface Props {
-    darkMode: boolean;
-    handleThemeChange: () => void;
-}
 
 const midLinks = [
     { title: 'products', subMenu: [{ title: "all products", path: "/catalog" }, { title: "ball stencils", path: '/ball-stencils' }, { title: "ball markers", path: "ball-markers" }, { title: "divot repair tools", path: "divot-repair-tools" }] },
@@ -34,12 +29,12 @@ const navStyles = {
     }
 }
 
-export default function Header({ darkMode, handleThemeChange }: Props) {
-    const {basket} = useStoreContext();
+export default function Header() {
+    const { basket } = useAppSelector(state => state.basket);
     const itemCount = basket?.items.reduce((sum, item) => sum + item.quantity, 0)
 
     return (
-        <AppBar position="static" style={{background: '#212121'}} sx={{ mb: 4 }}>
+        <AppBar position="static" style={{ background: '#212121' }} sx={{ mb: 4 }}>
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
                 <Box display='flex' alignItems='center'>
